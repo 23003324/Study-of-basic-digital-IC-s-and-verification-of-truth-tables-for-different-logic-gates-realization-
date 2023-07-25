@@ -1,4 +1,6 @@
-# Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-
+NAME : HARITHA RAMESH
+REGISTER NO : 23003324
+# Study of basic digital IC s and verification of truth tables for different logic gates realization
  AIM:
 To study about the different digital IC’s and to verify the truth table in Quartus for the basic logic gates using Verilog programming.
 
@@ -58,15 +60,36 @@ Press the switches for inputs “A” and “B”. The switch is ON state when 1
 If the output is 1, then the bulb glows.
 Check all the gates following the same procedure.
 Program:
-/*
-Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
-Output:
-RTL
+module logicgates(a,b,y1,y2,y3,y4,y5,y6,y7);
+
+input a,b;
+
+output y1,y2,y3,y4,y5,y6,y7;
+
+and (y1,a,b);
+
+or (y2,a,b);
+
+not (y3,a);
+
+xor (y4,a,b);
+
+nand(y5,a,b);
+
+nor(y6,a,b);
+
+xnor(y7,a,b);
+
+endmodule    
+
+## TRUTH TABLE
+![lgtt](https://github.com/23003324/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/140035234/61a19d94-284e-4c7f-b457-af3cd2e200a7)
+
+## RTL realization
+![RTL LG](https://github.com/23003324/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/140035234/37a7a0fa-43ea-489e-8401-737770ece7f3)
+## WAVEFORM
+![LG WF](https://github.com/23003324/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/140035234/cd271f9d-2aef-4ff9-80fe-5929c1295e5b)
+
 
 Result:
 Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
